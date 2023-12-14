@@ -10,6 +10,31 @@ export const getData = async () => {
           title
           slug
           id
+          slugTitle
+        }
+        slug2 {
+          id
+          slug
+          title
+          slugTitle
+        }
+        slug3 {
+          id
+          slug
+          title
+          slugTitle
+        }
+        slug4 {
+          id
+          slug
+          title
+          slugTitle
+        }
+        slug5 {
+          id
+          slug
+          title
+          slugTitle
         }
       }
       mains {

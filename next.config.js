@@ -2,7 +2,11 @@
 const nextConfig = {
 
 images: {
-    domains: ['media.graphassets.com']
+    remotePatterns: [
+        {
+            hostname: 'media.graphassets.com',
+        },
+      ],    
 }
 
 }

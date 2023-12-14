@@ -27,88 +27,64 @@ useEffect(() => {
     <li className='group relative dropdown '>
     <div className='flex gap-1 cursor-pointer '>
             <a>Categoria 1</a>
-           
             </div>
             <div className='group-hover:block dropdown-menu  absolute hidden'>
             <ul className='bg-white text-black w-max  rounded p-4'>
         {data.slug.map((data: any)=> (
-          <li className='hover:bg-gray-100' key={data.id}><Link href={`/categoria1/${data.slug}`}>{data.title}</Link></li>
+          <li className='hover:bg-gray-100' key={data.id}><Link href={`/categoria1/${data.slug}`}>{data.slugTitle}</Link></li>
         ))}
-          
-
-
-
             </ul>
             </div>
     </li>
     <li className='group relative dropdown '>
     <div className='flex gap-1 cursor-pointer '>
             <a>Categoria 2</a>
-           
             </div>
             <div className='group-hover:block dropdown-menu  absolute hidden'>
             <ul className='bg-white text-black w-max  rounded p-4'>
-              <li className='hover:bg-gray-100'><Link href="/categoria2/subcategoria1">Subcategoria 1</Link></li>
-              <li className='hover:bg-gray-100'><Link href="/categoria2/subcategoria2">Subcategoria 2</Link></li>
-              <li className='hover:bg-gray-100'><Link href="/categoria2/subcategoria3">Subcategoria 3</Link></li>
-              <li className='hover:bg-gray-100'><Link href="/categoria2/subcategoria4">Subcategoria 4</Link></li>
-              <li className='hover:bg-gray-100'><Link href="/categoria2/subcategoria5">Subcategoria 5</Link></li>
-
-
+        {data.slug2.map((data: any)=> (
+          <li className='hover:bg-gray-100' key={data.id}><Link href={`/categoria2/${data.slug}`}>{data.slugTitle}</Link></li>
+        ))}
             </ul>
             </div>
     </li>
     <li className='group relative dropdown '>
     <div className='flex gap-1 cursor-pointer '>
             <a>Categoria 3</a>
-           
             </div>
             <div className='group-hover:block dropdown-menu  absolute hidden'>
             <ul className='bg-white text-black w-max  rounded p-4'>
-              <li className='hover:bg-gray-100'><Link href="/categoria3/subcategoria1">Subcategoria 1</Link></li>
-              <li className='hover:bg-gray-100'><Link href="/categoria3/subcategoria2">Subcategoria 2</Link></li>
-              <li className='hover:bg-gray-100'><Link href="/categoria3/subcategoria3">Subcategoria 3</Link></li>
-              <li className='hover:bg-gray-100'><Link href="/categoria3/subcategoria4">Subcategoria 4</Link></li>
-              <li className='hover:bg-gray-100'><Link href="/categoria3/subcategoria5">Subcategoria 5</Link></li>
-
-
+        {data.slug3.map((data: any)=> (
+          <li className='hover:bg-gray-100' key={data.id}><Link href={`/categoria3/${data.slug}`}>{data.slugTitle}</Link></li>
+        ))}
             </ul>
             </div>
     </li>
     <li className='group relative dropdown '>
     <div className='flex gap-1 cursor-pointer '>
             <a>Categoria 4</a>
-           
             </div>
             <div className='group-hover:block dropdown-menu  absolute hidden'>
             <ul className='bg-white text-black w-max  rounded p-4'>
-              <li className='hover:bg-gray-100'><Link href="/categoria4/subcategoria1">Subcategoria 1</Link></li>
-              <li className='hover:bg-gray-100'><Link href="/categoria4/subcategoria2">Subcategoria 2</Link></li>
-              <li className='hover:bg-gray-100'><Link href="/categoria4/subcategoria3">Subcategoria 3</Link></li>
-              <li className='hover:bg-gray-100'><Link href="/categoria4/subcategoria4">Subcategoria 4</Link></li>
-              <li className='hover:bg-gray-100'><Link href="/categoria4/subcategoria5">Subcategoria 5</Link></li>
-
-
+        {data.slug4.map((data: any)=> (
+          <li className='hover:bg-gray-100' key={data.id}><Link href={`/categoria4/${data.slug}`}>{data.slugTitle}</Link></li>
+        ))}
             </ul>
             </div>
     </li>
     <li className='group relative dropdown '>
     <div className='flex gap-1 cursor-pointer '>
             <a>Categoria 5</a>
-           
             </div>
             <div className='group-hover:block dropdown-menu  absolute hidden'>
             <ul className='bg-white text-black w-max  rounded p-4'>
-              <li className='hover:bg-gray-100'><Link href="/categoria5/subcategoria1">Subcategoria 1</Link></li>
-              <li className='hover:bg-gray-100'><Link href="/categoria5/subcategoria2">Subcategoria 2</Link></li>
-              <li className='hover:bg-gray-100'><Link href="/categoria5/subcategoria3">Subcategoria 3</Link></li>
-              <li className='hover:bg-gray-100'><Link href="/categoria5/subcategoria4">Subcategoria 4</Link></li>
-              <li className='hover:bg-gray-100'><Link href="/categoria5/subcategoria5">Subcategoria 5</Link></li>
-
-
+        {data.slug5.map((data: any)=> (
+          <li className='hover:bg-gray-100' key={data.id}><Link href={`/categoria5/${data.slug}`}>{data.slugTitle}</Link></li>
+        ))}
             </ul>
             </div>
     </li>
+
 
       </ul>
     </nav>

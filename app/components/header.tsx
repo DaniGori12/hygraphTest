@@ -19,13 +19,13 @@ useEffect(() => {
   }
 
   return (
-    <div>
+    <div className='py-5 w-screen flex flex-row justify-center bg-black text-white'>
       {slug?.map((data: any) => (
     <nav  key={data.id}>
       <ul className='flex space-x-4 ' >
     <li><Link href="/">Home</Link></li>
     <li className='group relative dropdown '>
-    <div className='flex gap-1 cursor-pointer '>
+    <div className='flex  cursor-pointer '>
             <a>Categoria 1</a>
             </div>
             <div className='group-hover:block dropdown-menu  absolute hidden'>
@@ -37,7 +37,7 @@ useEffect(() => {
             </div>
     </li>
     <li className='group relative dropdown '>
-    <div className='flex gap-1 cursor-pointer '>
+    <div className='flex cursor-pointer '>
             <a>Categoria 2</a>
             </div>
             <div className='group-hover:block dropdown-menu  absolute hidden'>
@@ -49,7 +49,7 @@ useEffect(() => {
             </div>
     </li>
     <li className='group relative dropdown '>
-    <div className='flex gap-1 cursor-pointer '>
+    <div className='flex cursor-pointer '>
             <a>Categoria 3</a>
             </div>
             <div className='group-hover:block dropdown-menu  absolute hidden'>
@@ -61,7 +61,7 @@ useEffect(() => {
             </div>
     </li>
     <li className='group relative dropdown '>
-    <div className='flex gap-1 cursor-pointer '>
+    <div className='flex cursor-pointer '>
             <a>Categoria 4</a>
             </div>
             <div className='group-hover:block dropdown-menu  absolute hidden'>
@@ -73,7 +73,7 @@ useEffect(() => {
             </div>
     </li>
     <li className='group relative dropdown '>
-    <div className='flex gap-1 cursor-pointer '>
+    <div className='flex cursor-pointer '>
             <a>Categoria 5</a>
             </div>
             <div className='group-hover:block dropdown-menu  absolute hidden'>

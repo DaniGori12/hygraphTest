@@ -29,7 +29,7 @@ export default function Home() {
 
   return (
     <main >
-      <div className='bg-green-200 py-4 flex flex-col text-center'>
+      <div className='bg-green-200 py-4 flex flex-col text-center w-screen'>
         <h1 className='font-bold flex justify-center'>Mapeo primer Content Model</h1>
         {data?.map((data: any) => (
 
@@ -40,11 +40,11 @@ export default function Home() {
             <p>
               {data.description}
             </p>
-            <div className='bg-blue-200 p-4 items-center flex flex-col gap-2 mt-4'>
+            <div className='bg-green-300 p-4 items-center flex flex-col gap-2 mt-4'>
               <RichText content={data.body.raw} />
             </div>
             <p className='font-bold flex justify-center mt-4'>Mapeo diferentes fotos</p>
-            <div className='grid grid-cols-3 gap-5 p-4'>
+            <div className='flex flex-row gap-5 p-4 justify-center'>
               {data.images.map((data: any) => (
                 <div key={data.id} >
 
@@ -70,7 +70,7 @@ export default function Home() {
         ))
         }
       </div>
-      <div className='flex flex-col gap-4 my-8 py-4 bg-yellow-200 text-center '>
+      <div className='flex flex-col gap-4 py-8 py-4 bg-green-100 text-center '>
         <h2 className='font-bold'>Esto es otro content</h2>
         {dataBot?.map((data: any) => (
           <div key={data.id}>

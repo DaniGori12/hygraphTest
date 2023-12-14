@@ -4,6 +4,14 @@ export const getData = async () => {
 
   const query = gql`
     query Mains {
+      slugsWebs {
+        id  
+        slug {
+          title
+          slug
+          id
+        }
+      }
       mains {
         title
         description
@@ -44,13 +52,11 @@ export const getData = async () => {
         title
         id
         description
-        booleanAside
         body {
           raw
         }
       }
     }
-    
         `
 
   const result = await request('https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/clq27w8db4wab01tb5sdfcvi2/master', query)
